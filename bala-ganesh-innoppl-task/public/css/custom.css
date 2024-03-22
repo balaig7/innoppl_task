@@ -1,0 +1,32 @@
+.remove-product-thumnail-image {
+    top: 0px;
+    right: 0px;
+    z-index: 100;
+    text-align: center;
+}
+.remove-icon {
+    background: red !important;
+    padding: 4px;
+    color: #fff !important;
+    border-radius: 23px;
+    height: 24px !important;
+    width: 24px !important;
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+}
+
+.thumnail-image{
+    width: 100%;
+    height: 200px;
+}
+
+.loader{
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
