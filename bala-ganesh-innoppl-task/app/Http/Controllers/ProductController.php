@@ -249,10 +249,11 @@ class ProductController extends Controller
             if($row == 1){
                 continue;
             }
+            $importedFiles = [];
+
             //if the image url is added get the content from other server and post it in our server
             if($data['3']!='') {
                 $explodedImage = explode(",",$data['3']);
-                $importedFiles = [];
                 foreach ($explodedImage as $img) {
                     if (filter_var($img, FILTER_VALIDATE_URL)) {
                         $allowedExtension = ['jpeg','png'];
